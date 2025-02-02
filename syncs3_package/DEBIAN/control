@@ -1,0 +1,7 @@
+Package: synchronisation-s3
+Version: 1.0
+Priority: optional
+Architecture: all
+Maintainer: Abderrahmane RAMDANI ramdani.abderrahmane213@gmail.com
+Description: script to synchronize an S3 bucket with a local directory
+Depends: python3, python3-boto3

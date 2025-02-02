@@ -1,0 +1,15 @@
+# A service to run the program automatically at each system startup on a specific folder
+# edit the following file 
+# sudo nano /etc/systemd/system/synchronisation-s3.service
+
+[Unit]
+Description=Service de synchronisation S3
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/synchronisation_s3.py <folder_path> <bucket_name>
+Restart=always
+User=$(whoami)
+
+[Install]
+WantedBy=multi-user.target

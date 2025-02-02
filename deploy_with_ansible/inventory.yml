@@ -1,0 +1,11 @@
+servers_group:
+  hosts:
+    server_1:
+      ansible_host: <@server_1>
+    server_2:
+      ansible_host: <@server_2>
+    server_n:
+      ansible_host: <@server_n>
+
+  vars:
+    ansible_user: <admin_user_name>
